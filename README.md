@@ -35,7 +35,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     * **W**: weights matrix
     * **b**: bias matrix
 
-    $a^{(1)} = \sigma (**W** a^{(0)} + **b**)$
+    $a^{(1)} = \sigma (W a^{(0)} + b)$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
