@@ -25,6 +25,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     Each neuron must have a **weight** (w) that's correlated to the neuron we're trying to calculate.
     We can also **bias** (B) the sum, by just adding or substracting.
     After all that, we end up with a formula similar to this:
+    
         $N_1 = \sigma ( w )$
 
 ***
