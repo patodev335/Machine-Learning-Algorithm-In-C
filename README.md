@@ -27,7 +27,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     We can also **bias** (b) the sum, by just adding or substracting.
     And if we have *k* neurons in the previous layer, we end up with this formula:
 
-    $\large N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1} + b_{0})$
+    $\quad \large N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1} + b_{0})$
 
     If we do this for all neurons in the layer (not only the first one {10}), we could summarize by using matrices:
     * **$a^0$**: Matrix of neurons values -- first layer
@@ -35,7 +35,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     * **W**: weights matrix
     * **b**: bias matrix
 
-    $\large a^{(1)} = \sigma (\mathbf{W} a^{(0)} + \mathbf{b})$
+    $\quad \large a^{(1)} = \sigma (\mathbf{W} a^{(0)} + \mathbf{b})$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
