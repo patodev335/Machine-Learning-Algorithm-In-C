@@ -37,10 +37,8 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
 
     $\quad\large a^{(1)} = \sigma (\mathbf{W} a^{(0)} + \mathbf{b})$
 
-***
-
-### Gradient Descent ###
-Since at the end of the day this is just a function that takes as its input pixels and outputs ten possible boxes (0,1,2,3,4,5,6,7,8,9)... Therefore we can say there exists a function g, which equals to the difference between the result given by our function *(the neural network)* and the real value.
+* ### Gradient Descent ###
+    Since at the end of the day this is just a function that takes as its input pixels and outputs ten possible boxes (0,1,2,3,4,5,6,7,8,9)... Therefore we can say there exists a function g, which equals to the difference between the result given by our function *(the neural network)* and the real value.
 
     For example, let's say our computer said the number was 5, but in reality it was 6. Well, we could calculate how far off each neuron in the last layer was from the expected result and then calculate its distance (error) using:
 
@@ -50,17 +48,17 @@ $\qquad e = (Calculated - Expected)^2$
 
 $\qquad C(\mathbf{W}) = (C_0-E_0)^2 + (C_1 - E_1)^2 + ... = e_0 + e_1 + ... e_{k-1}$
 
-Since this is a function, we can minimize it by going in the opposite direction of the gradient.
-For example
+    Since this is a function, we can minimize it by going in the opposite direction of the gradient.
+    For example
 
-**Gradient in $\R$**
+    **Gradient in $\R$**
 $\qquad \nabla C = \frac{dC}{dx}$
 
-**Gradient in $\R^2$**
+    **Gradient in $\R^2$**
 $\qquad \nabla C = (\frac{dC}{dx}, \frac{dC}{dy})$
 
-Okay, so now we got the direction... How can we know how much to move in THAT direction?
-*Short answer*: we don't. That's why we'll move an arbitrary tiny step in that direction, which we will calll $\lambda$.
+    Okay, so now we got the direction... How can we know how much to move in THAT direction?
+    *Short answer*: we don't. That's why we'll move an arbitrary tiny step in that direction, which we will calll $\lambda$.
 
 $Step = \lambda (-\nabla C) = -\lambda (\nabla C)$
 
