@@ -30,10 +30,12 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     $N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1} + b_{0})$
 
     If we do this for all neurons in the layer (not only the first one {10}), we could summarize by using matrices:
-    * **$a^0$**: Matrix of neurons values first layer
-    * **$a^1$**: Matrix of calculated neurons values for the second layer
-    * **W**: is just the weights matrix
-    * **a^0
+    * **$a^0$**: Matrix of neurons values -- first layer
+    * **$a^1$**: Matrix of neurons values -- second layer
+    * **W**: weights matrix
+    * **b**: bias matrix
+
+    $a^{(1)} = \sigma (**W** a^{(0)} + **b**)$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
