@@ -51,10 +51,10 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     Since this is a function, we can minimize it by going in the opposite direction of the gradient.
     For example
 
-    **Gradient in $\R$**
+    **Gradient in $\mathbb{R}$**
     $\qquad \nabla C = \frac{dC}{dx}$
 
-    **Gradient in $\R^2$**
+    **Gradient in $\mathbb{R}^2$**
     $\qquad \nabla C = (\frac{dC}{dx}, \frac{dC}{dy})$
 
     Okay, so now we got the direction... How can we know how much to move in THAT direction?
