@@ -42,25 +42,25 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
 
     For example, let's say our computer said the number was 5, but in reality it was 6. Well, we could calculate how far off each neuron in the last layer was from the expected result and then calculate its distance (error) using:
 
-$\qquad e = (Calculated - Expected)^2$
+    $\qquad e = (Calculated - Expected)^2$
 
     If we do this and sum all errors, we get the **network cost function**, which is just a measure of how badly the network did!
 
-$\qquad C(\mathbf{W}) = (C_0-E_0)^2 + (C_1 - E_1)^2 + ... = e_0 + e_1 + ... e_{k-1}$
+    $\qquad C(\mathbf{W}) = (C_0-E_0)^2 + (C_1 - E_1)^2 + ... = e_0 + e_1 + ... e_{k-1}$
 
     Since this is a function, we can minimize it by going in the opposite direction of the gradient.
     For example
 
     **Gradient in $\R$**
-$\qquad \nabla C = \frac{dC}{dx}$
+    $\qquad \nabla C = \frac{dC}{dx}$
 
     **Gradient in $\R^2$**
-$\qquad \nabla C = (\frac{dC}{dx}, \frac{dC}{dy})$
+    $\qquad \nabla C = (\frac{dC}{dx}, \frac{dC}{dy})$
 
     Okay, so now we got the direction... How can we know how much to move in THAT direction?
     *Short answer*: we don't. That's why we'll move an arbitrary tiny step in that direction, which we will calll $\lambda$.
 
-$Step = \lambda (-\nabla C) = -\lambda (\nabla C)$
+    $Step = \lambda (-\nabla C) = -\lambda (\nabla C)$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
