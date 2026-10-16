@@ -17,6 +17,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     Each neuron has a value, which will go from 0 to 1. How do we do this?
     We can use the **sigmoid** function, which is just a function that sends all real numbers to (0,1).
     I'll write the equation just below:
+    
     $\sigma (x) = \frac{1}{1+e^{-x}}$
 
 * ### How each neuron in the next layer is influenced by the layer before it
@@ -25,7 +26,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     Each neuron must have a **weight** (w) that's correlated to the neuron we're trying to calculate.
     We can also **bias** (B) the sum, by just adding or substracting.
     After all that, we end up with a formula similar to this:
-    
+
         $N_1 = \sigma ( w )$
 
 ***
