@@ -18,7 +18,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     We can use the **sigmoid** function, which is just a function that sends all real numbers to (0,1).
     I'll write the equation just below:
 
-    $\sigma (x) = \frac{1}{1+e^{-x}}$
+    $\large \sigma (x) = \frac{1}{1+e^{-x}}$
 
 * ### How each neuron in the next layer is influenced by the layer before it
 
