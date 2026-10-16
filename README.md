@@ -13,7 +13,7 @@ local LLM or generative models.
 The basic idea is that we have an **image** which is represented through a **grid** of pixels *(rows x cols).* Therefore we can think that each pixel has a neuron associated with it and that it represents how much "on" the pixel is *(its brightness)*.
 Then we can arrange some **layers** of these neurons, where we hope that the last one of them will describe which number was written in the first place.
 
-### The Neuron Value ###
+* ### The Neuron Value ###
 Each neuron has a value, which will go from 0 to 1. How do we do this?
 We can use the **sigmoid** function, which is just a function that sends all real numbers to (0,1).
 I'll write the equation just below:
