@@ -27,7 +27,7 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
     We can also **bias** (B) the sum, by just adding or substracting.
     And if we have *k* neurons in the previous layer, we end up with this formula:
 
-    $N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k})$
+    $N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1})$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
