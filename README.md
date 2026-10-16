@@ -14,10 +14,10 @@ The basic idea is that we have an **image** which is represented through a **gri
 Then we can arrange some **layers** of these neurons, where we hope that the last one of them will describe which number was written in the first place.
 
 * ### The Neuron Value ###
-Each neuron has a value, which will go from 0 to 1. How do we do this?
-We can use the **sigmoid** function, which is just a function that sends all real numbers to (0,1).
-I'll write the equation just below:
-$f(x) = \frac{1}{1+e^{-x}}$
+    Each neuron has a value, which will go from 0 to 1. How do we do this?
+    We can use the **sigmoid** function, which is just a function that sends all real numbers to (0,1).
+    I'll write the equation just below:
+    $f(x) = \frac{1}{1+e^{-x}}$
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
