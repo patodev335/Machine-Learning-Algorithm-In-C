@@ -37,6 +37,11 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
 
     $\quad\large a^{(1)} = \sigma (\mathbf{W} a^{(0)} + \mathbf{b})$
 
+### Gradient Descent ###
+    Since at the end of the day this is just a function with huge parameters... We can say there exists a function g, which equals to the difference between the result given by our function *(the neural network)* and the real value.
+
+    For example, let's say our computer said the number was 5, but in reality it was 6. Well, we could calculate how far off it was from the real value, and try to move the parameters in a direction so the error decreases. That means, going in the direction of the gradient.
+
 ***
 **Author:** Patricio N. Monsalvo Canosa  
 **Date:** October 16, 2026

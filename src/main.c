@@ -1,9 +1,12 @@
 #include <stdio.h>
-#include "libs/frame.c"
+#include "../libs/frame.c"
 
 int main()
 {
-    printf("Test");
-    
+
+    Neuron test;
+    Neuron_setValue(&test, 128);
+    printf("%d", test.value);
+
     return 0;
 }
