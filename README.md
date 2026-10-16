@@ -24,10 +24,16 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
 
     Each neuron can be represented as the **linear combination** of the neurons before it.
     Each neuron must have a **weight** (w) that's correlated to the neuron we're trying to calculate.
-    We can also **bias** (B) the sum, by just adding or substracting.
+    We can also **bias** (b) the sum, by just adding or substracting.
     And if we have *k* neurons in the previous layer, we end up with this formula:
 
-    $N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1})$
+    $N_{10} = \sigma ( w_{01}N_0 + w_{11}N_1 + ... W_{k-1}N_{k-1} + b_{0})$
+
+    If we do this for all neurons in the layer (not only the first one {10}), we could summarize by using matrices:
+    * **$a^0$**: Matrix of neurons values first layer
+    * **$a^1$**: Matrix of calculated neurons values for the second layer
+    * **W**: is just the weights matrix
+    * **a^0
 
 ***
 **Author:** Patricio N. Monsalvo Canosa  
