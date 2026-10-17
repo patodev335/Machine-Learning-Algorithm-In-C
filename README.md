@@ -62,6 +62,20 @@ Then we can arrange some **layers** of these neurons, where we hope that the las
 
     $Step = \lambda (-\nabla C) = -\lambda (\nabla C)$
 
+    So, following this idea we can make adjust our weights so we come close to a **local minimum** *(or **absolute** minimum in a pretty unlikely case)*...
+
+
+
+## Functions and Structs ##
+
+### Functions ###
+* ML_CreateNeuronLayers
+
+### Structs ###
+* ML_Neuron: *{value, weights}*
+* ML_Layer
+* ML_NeuralMap
+
 ***
 **Author:** Patricio N. Monsalvo Canosa  
 **Date:** October 16, 2026
