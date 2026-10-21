@@ -9,5 +9,9 @@ typedef struct ML_Neuron{
 
 ML_Neuron** ML_CreateNeuronLayers(uint64_t num_layers, uint32_t num_neurons);
 
+ML_Neuron* ML_Run();
+
+ML_Neuron** ML_partialDerivative(ML_Neuron* function);
+
 typedef ML_Neuron* ML_Layer;
 typedef ML_Neuron** ML_NeuralMap;
